@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>  
+    <input type="checkbox" id="menu-toggle" hidden>
+    <header>
+        <label for="menu-toggle" class="menu-backdrop"></label>
+        <label for="menu-toggle" class="menu-btn">
+            <i class="fa-solid fa-bars">    </i>
+            <img src="Imagenes/ahora.png" alt="YouTube Logo">
+        </label>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button class="lupa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="micro" type="submit"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+        <div class="user-actions">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <button>
+                <i class="fa-regular fa-circle-user"></i>
+                <p>Acceder</p>
+            </button>
+        </div>
+    </header>
+    <div class="menu-bar">
+        <!-- Principal -->
+        <div class="menu-section">
+            <div class="menu-item">
+                <i class="fa-solid fa-house"></i>
+                <p>Principal</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-bolt"></i>
+                <p>Shorts</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-play-circle"></i>
+                <p>Suscripciones</p>
+            </div>
+            <div class="line ocultar"></div>
+            <div class="menu-item">
+                <i class="fa-solid fa-bookmark"></i>
+                <p>Tu</p>
+            </div>
+            <div class="ocultar">
+                <div class="menu-item">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <p>Historial</p>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <p>Playlists</p>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-video"></i>
+                    <p>Tus videos</p>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Ver más tarde</p>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <p>Videos que me gustan</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Suscripciones -->
+
+        <div class="menu-section ocultar subs-section">
+            <h3>Suscripciones   </h3>
+            <div class="menu-item">
+                <img src="Imagenes/account.png" alt="Canal 1" class="channel-img">
+                <p>Canal 1</p>
+            </div>
+            <div class="menu-item">
+                <img src="Imagenes/account.png" alt="Canal 2" class="channel-img">
+                <p>Canal 2</p>
+            </div>
+            <div class="menu-item">
+                <img src="Imagenes/account.png" alt="Canal 3" class="channel-img">
+                <p>Canal 3</p>
+            </div>
+            <div class="menu-item">
+                <img src="Imagenes/account.png" alt="Canal 4" class="channel-img">
+                <p>Canal 4</p>
+            </div>
+            <div class="menu-item">
+                <img src="Imagenes/account.png" alt="Canal 5" class="channel-img">
+                <p>Canal 5</p>
+            </div>
+        </div>
+        <!-- Explorar -->
+        <div class="menu-section ocultar">
+            <h3>Explorar </h3>
+            <div class="menu-item">
+                <i class="fa-solid fa-music"></i>
+                <p>Musica</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-gamepad"></i>
+                <p>Videojuegos</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-newspaper"></i>
+                <p>Noticias</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-trophy"></i>
+                <p>Deportes</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-regular fa-lightbulb"></i>
+                <p>Aprendizaje</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-microphone"></i>
+                <p>Podcast</p>
+            </div>
+        </div>
+        <!-- Mas de youtube -->
+        <div class="menu-section ocultar">
+            <h3>Más de YouTube</h3>
+            <div class="menu-item">
+                <i class="fa-brands fa-youtube"></i>
+                <p>YouTube Gaming</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-brands fa-youtube"></i>
+                <p>YouTube TV</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-brands fa-youtube"></i>
+                <p>YouTube Music</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-brands fa-youtube"></i>
+                <p>YouTube Kids</p>
+            </div>
+        </div>
+        <!-- Configuraciones -->
+        <div class="menu-section ocultar config">
+            <h3>Configuraciones</h3>
+            <div class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                <p>Configuración</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-flag"></i>
+                <p>Historial de denuncias</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-question"></i>
+                <p>Ayuda</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-exclamation"></i>
+                <p>Enviar comentarios</p>
+            </div>
+        </div>
+        <!-- Derechos de auto -->
+    </div>
+    <main>
+        <div class="categories">
+            <span class="category active">Todo</span>
+            <span class="category">Música</span>
+            <span class="category">ASMR</span>
+            <span class="category">Mixes</span>
+            <span class="category">Juegos</span>
+            <span class="category">Noticias</span>
+            <span class="category">Jesse Pinkman</span>
+            <span class="category">Clash Royale</span>
+            <span class="category">Dota 2</span>
+            <span class="category">Freestyle Rap</span>
+            <span class="category">Juegos de aventura y acción</span>
+            <span class="category">Comedias</span>
+            <span class="category">Subidos recientemente</span>
+            <span class="category">Visto</span>
+            <span class="category">Novedad para ti</span>
+            <span class="category">Comedias</span>
+            <!-- Añade más categorías aquí -->
+        </div>
+        <section class="grid primero">
+            <div class="grid-item grid-primero">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid1.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">La montaña nevada</h3>
+                            <p class="item-channel">Perrito </p>
+                            <p class="item-stats">10 k vistas • hace 48 minutos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item grid-primero">
+                <div class="item-item ">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid2.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">Las montañas sagradas</h3>
+                            <p class="item-channel">JOSE CARLOS</p>
+                            <p class="item-stats">1M vistas • hace 11 meses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item grid-primero">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid3.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">Familia de tigres</h3>
+                            <p class="item-channel">Piedra</p>
+                            <p class="item-stats">1M vistas • hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item grid-primero">
+                <div class="item-item ">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid4.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">Ciudad de Estados Unidos</h3>
+                            <p class="item-channel">Tecito con patas</p>
+                            <p class="item-stats">10 k vistas • hace 48 minutos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="shorts-header">
+            <i class="fa-solid fa-bolt"></i>
+            <h2 class="shorts-h2">Shorts</h2>
+        </div>
+        <div class="shorts-container">
+            <div class="shorts-grid">
+                <div class="shorts-item">
+                    <img src="Imagenes/short1.avif" alt="Video Thumbnail">
+                    <div class="shorts-info">
+                        <div class="shorts-text">
+                            <h3 class="shorts-title">El edificio infinito</h3>
+                            <p class="shorts-stats">1M views • Hace un año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shorts-grid">
+                <div class="shorts-item">
+                    <img src="Imagenes/short2.avif" alt="Video Thumbnail">
+                    <div class="shorts-info">
+                        <div class="shorts-text">
+                            <h3 class="shorts-title">Las nuevas tecnologias</h3>
+                            <p class="shorts-stats">1M views • Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shorts-grid">
+                <div class="shorts-item">
+                    <img src="Imagenes/short3.avif" alt="Video Thumbnail">
+                    <div class="shorts-info">
+                        <div class="shorts-text">
+                            <h3 class="shorts-title">Las flores de loto</h3>
+                            <p class="shorts-stats">1M views • Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shorts-grid">
+                <div class="shorts-item">
+                    <img src="Imagenes/short4.avif" alt="Video Thumbnail">
+                    <div class="shorts-info">
+                        <div class="shorts-text">
+                            <h3 class="shorts-title">Flores amarillas</h3>
+                            <p class="shorts-stats">1M views • Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shorts-grid">
+                <div class="shorts-item">
+                    <img src="Imagenes/short5.avif">
+                    <div class="shorts-info">
+                        <div class="shorts-text">
+                            <h3 class="shorts-title">Una linda flor</h3>
+                            <p class="shorts-stats">1M views • Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shorts-grid">
+                <div class="shorts-item">
+                    <img src="Imagenes/short6.avif" alt="Video Thumbnail">
+                    <div class="shorts-info">
+                        <div class="shorts-text">
+                            <h3 class="shorts-title">Un nuevo lugar en la india</h3>
+                            <p class="shorts-stats">1M views • Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <section class="grid">
+            <div class="grid-item">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid5.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">El guardián del amanecer</h3>
+                            <p class="item-channel">Perrito </p>
+                            <p class="item-stats">10 k vistas • hace 48 minutos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid6.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">EL FARO DE LA VIDA</h3>
+                            <p class="item-channel">JOSE CARLOS</p>
+                            <p class="item-stats">1M vistas • hace 11 meses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid7.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">Cumbres de fuego</h3>
+                            <p class="item-channel">Piedra</p>
+                            <p class="item-stats">1M vistas • hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid8.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">Pequeños detalles del alma</h3>
+                            <p class="item-channel">Tecito con patas</p>
+                            <p class="item-stats">10 k vistas • hace 48 minutos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grid">
+            <div class="grid-item">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid9.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">Entre montañas y nubes</h3>
+                            <p class="item-channel">Perrito </p>
+                            <p class="item-stats">10 k vistas • hace 48 minutos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid1.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">El silencio del hielo</h3>
+                            <p class="item-channel">JOSE CARLOS</p>
+                            <p class="item-stats">1M vistas • hace 11 meses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid2.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">Ecos del invierno</h3>
+                            <p class="item-channel">Piedra</p>
+                            <p class="item-stats">1M vistas • hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item-item">
+                    <div class="thumbnail-container">
+                        <img src="Imagenes/vid3.avif" alt="Video Thumbnail">
+                    </div>
+                    <div class="item-info">
+                        <img class="channel-icon" src="Imagenes/account.png" alt="Channel Icon">    
+                        <div class="item-text">
+                            <h3 class="item-title">La reina de la sabana</h3>
+                            <p class="item-channel">Tecito con patas</p>
+                            <p class="item-stats">10 k vistas • hace 48 minutos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+
+<!--
+comentario
+
+-->
